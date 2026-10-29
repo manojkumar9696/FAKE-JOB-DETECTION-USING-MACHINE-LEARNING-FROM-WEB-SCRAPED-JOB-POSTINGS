@@ -1,0 +1,32 @@
+pipeline:
+  id: pipeline_manojkumar9696_FAKE_JOB_DETECTION_USING_MACHINE_LEARNING_FROM_WEB_SCRAPED_JOB_POSTINGS_build_4c8b
+  name: pipeline_manojkumar9696_FAKE_JOB_DETECTION_USING_MACHINE_LEARNING_FROM_WEB_SCRAPED_JOB_POSTINGS_build_4c8b
+  stages:
+    - id: build
+      name: Build and Validate
+      runtime: cloud
+      clone:
+        enabled: true
+      cache:
+        enabled: true
+      steps:
+        - id: install_dependencies
+          name: Install Dependencies
+          run:
+            shell: bash
+            script: |-
+              python3 --version
+              pip3 install --upgrade pip
+              pip3 install streamlit requests beautifulsoup4 pandas scikit-learn validators
+          timeout: 10m
+        - id: syntax_check
+          name: Syntax Check
+          run:
+            shell: bash
+            script: |-
+              echo "Running Python syntax check..."
+              python3 -m py_compile code/job.py
+              echo "Syntax check passed"
+          timeout: 5m
+  tags:
+    onboarding: "true"

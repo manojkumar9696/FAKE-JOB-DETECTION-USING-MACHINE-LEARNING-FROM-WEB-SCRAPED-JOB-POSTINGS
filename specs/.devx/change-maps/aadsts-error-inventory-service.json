@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-30T10:05:43.911Z",
+  "featureId": 1087793368,
+  "featureTitle": "[Planning] Define AADSTS code inventory, JSON schema, and severity classification; [Backend] Implement AADSTS error mapping service with JSON file loader and cache",
+  "slug": "aadsts-error-inventory-service",
+  "advisory": true,
+  "confidence": 0.45,
+  "ownerRepoType": "current-repo",
+  "impactedRepoTypes": [
+    "current-repo"
+  ],
+  "candidateAreas": [
+    "UI screens/components",
+    "API routes/services",
+    "Data model/persistence",
+    "Authentication/authorization",
+    "Background work/events",
+    "Tests"
+  ],
+  "filesToReadFirst": [
+    "specs/.devx/project-context.md",
+    "specs/.devx/current-state.md",
+    "specs/.devx/implementation-check.md",
+    "specs/.devx/change-maps/aadsts-error-inventory-service.md",
+    "specs/.devx/guidance/versions/5936987bf63b/golden-repo-guidelines.md",
+    "specs/aadsts-error-inventory-service/specs.md",
+    "specs/aadsts-error-inventory-service/requirements.md",
+    "specs/aadsts-error-inventory-service/prompt.md"
+  ],
+  "existingCodeSearchHints": [
+    {
+      "area": "UI screens/components",
+      "action": "Search the discovered workspace for existing ui screens/components before creating new code."
+    },
+    {
+      "area": "API routes/services",
+      "action": "Search the discovered workspace for existing api routes/services before creating new code."
+    },
+    {
+      "area": "Data model/persistence",
+      "action": "Search the discovered workspace for existing data model/persistence before creating new code."
+    },
+    {
+      "area": "Authentication/authorization",
+      "action": "Search the discovered workspace for existing authentication/authorization before creating new code."
+    },
+    {
+      "area": "Background work/events",
+      "action": "Search the discovered workspace for existing background work/events before creating new code."
+    },
+    {
+      "area": "Tests",
+      "action": "Search the discovered workspace for existing tests before creating new code."
+    }
+  ],
+  "testsToInspect": [
+    "Existing unit tests near candidate implementation files",
+    "Existing integration/API tests for related routes or services",
+    "Existing UI/e2e tests for related screens or flows"
+  ],
+  "constraints": [
+    "Verify every suggested path in the actual IDE workspace before editing.",
+    "Prefer extending existing modules over creating parallel implementations.",
+    "Existing code patterns override generic guidance when they conflict.",
+    "Do not create a new repo or major folder structure unless the spec explicitly requires it."
+  ],
+  "routingRationale": [
+    "Use current workspace discovery output to confirm ownership before implementation."
+  ]
+}

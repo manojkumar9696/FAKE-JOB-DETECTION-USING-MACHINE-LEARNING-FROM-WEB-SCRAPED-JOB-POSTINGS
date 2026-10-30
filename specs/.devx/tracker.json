@@ -1,0 +1,13 @@
+{
+  "trackerVersion": 1,
+  "updatedAt": "2026-10-30T10:05:43.907Z",
+  "tasks": {
+    "FEATURE-1087793368": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "[Planning] Define AADSTS code inventory, JSON schema, and severity classification; [Backend] Implement AADSTS error mapping service with JSON file loader and cache",
+      "featureId": 1087793368,
+      "slug": "aadsts-error-inventory-service",
+      "updatedAt": "2026-10-30T10:05:43.907Z"
+    }
+  }
+}

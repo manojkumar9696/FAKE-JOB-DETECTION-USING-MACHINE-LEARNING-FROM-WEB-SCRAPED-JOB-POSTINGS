@@ -1,0 +1,5 @@
+# Keep DevX bootstrap scripts LF so bash can parse them on every OS.
+*.sh text eol=lf
+discover-workspace.sh text eol=lf
+init.sh text eol=lf
+mcp/server.js text eol=lf

@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-30T10:05:43.907Z",
+  "enableTdd": false,
+  "totalFeatures": 1,
+  "features": [
+    {
+      "id": 1087793368,
+      "taskId": "FEATURE-1087793368",
+      "title": "[Planning] Define AADSTS code inventory, JSON schema, and severity classification; [Backend] Implement AADSTS error mapping service with JSON file loader and cache",
+      "slug": "aadsts-error-inventory-service",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Who is permitted to modify the mapping file in production.",
+          "blocking": false
+        },
+        {
+          "id": "oq-2",
+          "text": "Whether config-endpoint-based reload is allowed in addition to file-based reload in the target environment.",
+          "blocking": true
+        },
+        {
+          "id": "oq-3",
+          "text": "Whether any administrative approval workflow is required before new mappings are deployed.",
+          "blocking": false
+        }
+      ],
+      "storyCount": 2,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/aadsts-error-inventory-service/specs.md",
+        "requirements": "specs/aadsts-error-inventory-service/requirements.md",
+        "tasks": "specs/aadsts-error-inventory-service/tasks.md",
+        "prompt": "specs/aadsts-error-inventory-service/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 26507,
+          "title": "[Planning] Define AADSTS code inventory, JSON schema, and severity classification",
+          "state": "New",
+          "storyPoints": null
+        },
+        {
+          "id": 26508,
+          "title": "[Backend] Implement AADSTS error mapping service with JSON file loader and cache",
+          "state": "New",
+          "storyPoints": null
+        }
+      ]
+    }
+  ]
+}
